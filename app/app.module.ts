@@ -5,6 +5,7 @@ import { AppComponent }  from './app.component';
 import { BookmarksComponent } from './bookmarks.component';
 import { QuestionsComponent } from './questions.component';
 import { BookmarkService } from './bookmark.service';
+import { QuestionService } from './question.service';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -17,7 +18,10 @@ import { AppRoutingModule } from './app-routing.module';
     BookmarksComponent,
     QuestionsComponent
   ],
-  providers: [ BookmarkService ],
+  providers: [
+    BookmarkService ,
+    QuestionService
+  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
