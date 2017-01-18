@@ -11,6 +11,8 @@
   </li>
   </ul>
 </div>
-<div *ngIf="selectedBookmark">
-  <h2>{{selectedBookmark.name}}</h2>
+<div
+*ngIf="selectedBookmark" class="selected-container"
+>
+  <h2>Selected Bookmark: {{selectedBookmark.name | uppercase}}</h2>
 </div>

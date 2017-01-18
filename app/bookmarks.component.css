@@ -39,3 +39,7 @@
 .selected {
   font-size: 24px;
 }
+
+.selected-container h2 {
+  text-align: center;
+}
