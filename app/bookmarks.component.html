@@ -14,5 +14,7 @@
 <div
 *ngIf="selectedBookmark" class="selected-container"
 >
-  <h2>Selected Bookmark: {{selectedBookmark.name | uppercase}}</h2>
+  <a href="{{selectedBookmark.url}}" target="_blank">
+    <h2>Selected Bookmark: {{selectedBookmark.name | uppercase}}</h2>
+  </a>
 </div>

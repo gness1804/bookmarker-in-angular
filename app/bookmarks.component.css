@@ -20,6 +20,10 @@
   font-weight: 600;
 }
 
+.bookmarks-main-section p:hover {
+  cursor: pointer;
+}
+
 .bookmarks-main-section ul li a:link {
   color: rgb(68, 106, 196);
   cursor: pointer;
@@ -42,5 +46,19 @@
 }
 
 .selected-container h2 {
+  color: rgb(76, 94, 219);
   text-align: center;
+}
+
+.selected-container h2:hover {
+  color: rgb(232, 42, 30);
+}
+
+.selected-container a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.selected-container a:hover {
+  color: rgb(232, 42, 30);
 }
