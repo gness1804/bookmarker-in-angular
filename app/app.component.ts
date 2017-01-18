@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: [ 'app.component.css' ],
   template: `
   <h1>{{title}}</h1>
+  <bookmarks></bookmarks>
   `,
 })
 
