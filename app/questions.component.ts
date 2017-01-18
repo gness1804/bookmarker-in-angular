@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Question } from './question';
 import { QuestionService } from './question.service';
@@ -13,9 +14,11 @@ import { QuestionService } from './question.service';
 
 export class QuestionsComponent implements OnInit  {
   questions: Question[];
+  selectedQuestion: Question;
 
   constructor(
-    private questionService: QuestionService
+    private questionService: QuestionService,
+    private router: Router,
   ){}
 
   getQuestions(): void {
@@ -24,6 +27,11 @@ export class QuestionsComponent implements OnInit  {
 
   ngOnInit(): void {
     this.getQuestions();
+  }
+
+  onSelect(question: Question): void {
+    this.selectedQuestion = question;
+    this.router.navigate(['/detail', this.selectedQuestion.id]);
   }
 
 }

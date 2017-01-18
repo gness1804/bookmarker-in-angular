@@ -2,6 +2,7 @@
   <ul>
     <li
     *ngFor="let question of questions"
+    (click)="onSelect(question)"
     >
     <h2>{{question.body}}</h2>
     </li>

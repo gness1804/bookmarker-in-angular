@@ -8,4 +8,8 @@ export class QuestionService {
     return Promise.resolve(QUESTIONS)
   }
 
+  getQuestion(id: number): Promise<Question>{
+    return this.getQuestions().then(questions => questions.find(question => question.id === id))
+  }
+
 }
