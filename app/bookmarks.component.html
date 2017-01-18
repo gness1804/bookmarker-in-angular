@@ -1,9 +1,11 @@
-<h2>Bookmarks</h2>
-<ul>
-  <li
+<div class="bookmarks-main-section">
+  <h2>Useful Tech Interview Links</h2>
+  <ul>
+    <li
     *ngFor="let bookmark of bookmarks"
-  >
-  <p>{{bookmark.name}}</p>
-  <a href="{{bookmark.url}}" target="_blank">The Link</a>
+    >
+    <p>{{bookmark.name}}</p>
+    <a href="{{bookmark.url}}" target="_blank">The Link</a>
   </li>
-</ul>
+  </ul>
+</div>

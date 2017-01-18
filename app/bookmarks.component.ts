@@ -8,6 +8,7 @@ import { BookmarkService } from './bookmark.service';
   moduleId: module.id,
   selector: 'bookmarks',
   templateUrl: 'bookmarks.component.html',
+  styleUrls: [ 'bookmarks.component.css' ],
 })
 
 export class BookmarksComponent implements OnInit  {
