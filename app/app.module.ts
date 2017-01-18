@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
 import { BookmarksComponent } from './bookmarks.component';
+import { QuestionsComponent } from './questions.component';
 import { BookmarkService } from './bookmark.service';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   declarations: [
     AppComponent,
-    BookmarksComponent
+    BookmarksComponent,
+    QuestionsComponent
   ],
   providers: [ BookmarkService ],
   bootstrap:    [ AppComponent ]
