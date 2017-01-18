@@ -1,7 +1,17 @@
 .question-detail-container {
+  border: 1px solid rgb(214, 205, 201);
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 70vw;
   text-align: center;
 }
 
 .question-detail-container ul li {
+  cursor: pointer;
   list-style-type: none;
+  margin: 30px auto;
+}
+
+.question-detail-container h4 {
+  margin-bottom: 50px;
 }
