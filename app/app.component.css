@@ -2,3 +2,33 @@ h1 {
   color: rgb(76, 94, 219);
   text-align: center;
 }
+
+nav {
+  margin: 60px auto;
+  text-align: center;
+}
+
+nav a {
+  background-color: rgb(236, 241, 245);
+  border: 1px solid rgb(214, 205, 201);
+  border-radius: 5px;
+  margin: 0 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:link {
+  color: rgb(68, 106, 196);
+  cursor: pointer;
+}
+
+nav a:visited {
+  color: rgb(143, 198, 255);
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: rgb(232, 42, 30);
+  cursor: pointer;
+  font-style: italic;
+}

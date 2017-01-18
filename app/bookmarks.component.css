@@ -21,12 +21,13 @@
 }
 
 .bookmarks-main-section ul li a:link {
-  color: rgb(76, 94, 219);
+  color: rgb(68, 106, 196);
   cursor: pointer;
   text-decoration: none;
 }
 
 .bookmarks-main-section ul li a:visited {
+  color: rgb(143, 198, 255);
   cursor: pointer;
 }
 
