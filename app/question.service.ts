@@ -4,8 +4,8 @@ import { QUESTIONS} from './questions-data';
 
 @Injectable()
 export class QuestionService {
-  getQuestion(): Promise<Question[]> {
-    Promise.resolve(QUESTIONS)
+  getQuestions(): Promise<Question[]> {
+    return Promise.resolve(QUESTIONS)
   }
 
 }
