@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: [ 'app.component.css' ],
   template: `
   <h1>{{title}}</h1>
-  <bookmarks></bookmarks>
+  <a routerLink="/bookmarks" routerLinkActive="active" >Bookmarks</a>
+  <router-outlet></router-outlet>
   `,
 })
 
