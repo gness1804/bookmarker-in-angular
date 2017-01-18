@@ -4,6 +4,6 @@
     *ngFor="let bookmark of bookmarks"
   >
   <p>{{bookmark.name}}</p>
-  <p>{{bookmark.url}}</p>
+  <a href="{{bookmark.url}}" target="_blank">The Link</a>
   </li>
 </ul>
