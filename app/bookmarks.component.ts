@@ -13,6 +13,11 @@ import { BookmarkService } from './bookmark.service';
 
 export class BookmarksComponent implements OnInit  {
   bookmarks: Bookmark[];
+  selectedBookmark: Bookmark;
+
+  onSelect(bookmark: Bookmark): void {
+    this.selectedBookmark = bookmark;
+  }
 
   constructor(
     private bookmarkService: BookmarkService

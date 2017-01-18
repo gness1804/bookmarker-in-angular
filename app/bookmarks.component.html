@@ -3,9 +3,14 @@
   <ul>
     <li
     *ngFor="let bookmark of bookmarks"
+    [class.selected]="bookmark === selectedBookmark"
+    (click)="onSelect(bookmark)"
     >
     <p>{{bookmark.name}}</p>
     <a href="{{bookmark.url}}" target="_blank">The Link</a>
   </li>
   </ul>
+</div>
+<div *ngIf="selectedBookmark">
+  <h2>{{selectedBookmark.name}}</h2>
 </div>

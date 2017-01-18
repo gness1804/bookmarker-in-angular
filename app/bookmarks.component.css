@@ -35,3 +35,7 @@
   cursor: pointer;
   font-style: italic;
 }
+
+.selected {
+  font-size: 24px;
+}
