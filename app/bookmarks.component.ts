@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   moduleId: module.id,
   selector: 'bookmarks',
-  template: '<h2>Hello</h2>'
+  templateUrl: 'bookmarks.component.html',
 })
 
-export class MyComponent  {
+export class Bookmarks  {
 
 }
