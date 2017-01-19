@@ -12,13 +12,13 @@ export class QuestionService {
     return this.getQuestions().then(questions => questions.find(question => question.id === id))
   }
 
-  addQuestion(): void {
+  addQuestion(body: string, answer: string, sourceName: string, sourceUrl: string): void {
     QUESTIONS.push({
       id: Date.now(),
-      body: 'what is foo?',
-      answer: 'foo is bar',
-      sourceName: 'foo website',
-      sourceUrl: 'foo.com',
+      body,
+      answer,
+      sourceName,
+      sourceUrl,
     })
   }
 
