@@ -53,12 +53,3 @@
 .selected-container h2:hover {
   color: rgb(232, 42, 30);
 }
-
-.selected-container a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.selected-container a:hover {
-  color: rgb(232, 42, 30);
-}

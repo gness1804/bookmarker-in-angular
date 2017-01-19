@@ -16,19 +16,3 @@ nav a {
   padding: 10px;
   text-decoration: none;
 }
-
-nav a:link {
-  color: rgb(68, 106, 196);
-  cursor: pointer;
-}
-
-nav a:visited {
-  color: rgb(165, 108, 213);
-}
-
-nav a:hover {
-  background-color: #ffffff;
-  color: rgb(232, 42, 30);
-  cursor: pointer;
-  font-style: italic;
-}
