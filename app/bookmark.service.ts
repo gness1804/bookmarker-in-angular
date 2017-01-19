@@ -9,10 +9,10 @@ export class BookmarkService {
       return Promise.resolve(BOOKMARKS);
   };
 
-  addBookmark(titleVal: string): void {
+  addBookmark(titleVal: string, urlVal: string): void {
     BOOKMARKS.push({
       name: titleVal,
-      url: 'foo.com',
+      url: urlVal,
       id: Date.now(),
     });
   }
