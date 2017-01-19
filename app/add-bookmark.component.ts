@@ -5,7 +5,8 @@ import { BookmarkService } from './bookmark.service';
 @Component({
   moduleId: module.id,
   selector: 'add-bookmark',
-  templateUrl: 'add-bookmark.component.html'
+  templateUrl: 'add-bookmark.component.html',
+  styleUrls: [ 'add-bookmark.component.css' ],
 })
 
 export class AddBookmarkComponent  {
