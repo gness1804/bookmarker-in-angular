@@ -5,7 +5,8 @@ import { QuestionService } from './question.service';
 @Component({
   moduleId: module.id,
   selector: 'add-question',
-  templateUrl: 'add-question.component.html'
+  templateUrl: 'add-question.component.html',
+  styleUrls: [ 'add-question.component.css' ],
 })
 
 export class AddQuestionComponent  {
