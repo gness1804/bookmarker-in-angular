@@ -14,6 +14,8 @@ import { BookmarkService } from './bookmark.service';
 export class BookmarksComponent implements OnInit  {
   bookmarks: Bookmark[];
   selectedBookmark: Bookmark;
+  titleVal = '';
+  urlVal = '';
 
   onSelect(bookmark: Bookmark): void {
     this.selectedBookmark = bookmark;
@@ -31,10 +33,29 @@ export class BookmarksComponent implements OnInit  {
       this.getBookmarks();
   }
 
+  onKeyTitle(value: string): void {
+    this.titleVal = value;
+  }
+
+  onKeyURL(value: string): void {
+    this.urlVal = value;
+  }
+
+  onAdd(): void {
+    this.bookmarks.push(
+      {
+        name: this.titleVal,
+        url: this.urlVal,
+        id: Date.now(),
+      }
+    )
+  }
+
   onDeleteBookmark(id: number): void {
     this.bookmarks = this.bookmarks.filter((bookmark) => {
       return bookmark.id !== id;
     })
+    this.selectedBookmark = null;
   }
 
 }
