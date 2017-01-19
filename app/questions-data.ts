@@ -1,6 +1,6 @@
 import { Question } from './question';
 
-export const QUESTIONS: Question[] = [
+export let QUESTIONS: Question[] = [
   {
     id: 1,
     body: 'How can you avoid callback hells?',
