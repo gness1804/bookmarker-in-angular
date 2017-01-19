@@ -18,14 +18,4 @@
     <h2>Selected Bookmark: {{selectedBookmark.name | uppercase}}</h2>
   </a>
 </div>
-<div class="add-bookmark-container">
-  <h3>Add a Bookmark!</h3>
-  <input type="text" placeholder="Bookmark Title" #title (keyup)="onKeyTitle(title.value)" required/>
-  <input type="text" placeholder="Bookmark URL" #url (keyup)="onKeyURL(url.value)"/>
-  <button
-  type="submit"
-  (click)="onAdd()"
-  >
-  Add Bookmark
-  </button>
-</div>
+<add-bookmark></add-bookmark>
