@@ -1,3 +1,9 @@
 .question-detail-component {
+  background-color: rgb(225, 230, 231);
+  border: 1px solid rgb(214, 205, 201);
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 60vw;
+  padding: 30px;
   text-align: center;
 }

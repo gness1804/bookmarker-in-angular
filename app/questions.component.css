@@ -1,4 +1,4 @@
-.question-detail-container {
+.questions-container {
   background-color: rgb(225, 230, 231);
   border: 1px solid rgb(214, 205, 201);
   border-radius: 5px;
@@ -7,20 +7,20 @@
   text-align: center;
 }
 
-.question-detail-container h2 {
+.questions-container h2 {
   margin: 40px auto;
 }
 
-.question-detail-container ul li {
+.questions-container ul li {
   cursor: pointer;
   list-style-type: none;
   margin: 30px auto;
 }
 
-.question-detail-container ul li:hover {
-  border: 1px solid #ffffff;
+.questions-container ul li:hover {
+  font-style: italic;
 }
 
-.question-detail-container h4 {
+.questions-container h4 {
   margin-bottom: 50px;
 }
