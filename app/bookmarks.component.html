@@ -17,5 +17,9 @@
   <a href="{{selectedBookmark.url}}" target="_blank">
     <h2>Selected Bookmark: {{selectedBookmark.name | uppercase}}</h2>
   </a>
+  <button
+  type="submit"
+  (click)="onDeleteBookmark(selectedBookmark.id)"
+  >Delete Selected Bookmark</button>
 </div>
 <add-bookmark></add-bookmark>

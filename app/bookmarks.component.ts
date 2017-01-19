@@ -31,4 +31,10 @@ export class BookmarksComponent implements OnInit  {
       this.getBookmarks();
   }
 
+  onDeleteBookmark(id: number): void {
+    this.bookmarks = this.bookmarks.filter((bookmark) => {
+      return bookmark.id !== id;
+    })
+  }
+
 }
