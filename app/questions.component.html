@@ -10,4 +10,14 @@
     </li>
   </ul>
 </div>
-<add-question></add-question>
+<div class="add-question-container">
+  <h3>Add a Question!</h3>
+  <input type="text" placeholder="Question" #body (keyup)="onKeyBody(body.value)" required/>
+  <input type="text" placeholder="Answer" #answer (keyup)="onKeyAnswer(answer.value)"/>
+  <input type="text" placeholder="Source" #sourceName (keyup)="onKeySourceName(sourceName.value)"/>
+  <input type="text" placeholder="Source URL" #sourceUrl (keyup)="onKeySourceUrl(sourceUrl.value)"/>
+  <button
+  type="submit"
+  (click)="onAdd()"
+  >Add a Question!</button>
+</div>
