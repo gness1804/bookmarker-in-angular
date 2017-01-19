@@ -7,3 +7,14 @@
   padding: 30px;
   text-align: center;
 }
+
+.question-detail-component button {
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+}
+
+.question-detail-component button:hover{
+  background-color: #ffffff;
+  cursor: pointer;
+}
