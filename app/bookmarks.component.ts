@@ -14,7 +14,7 @@ import { BookmarkService } from './bookmark.service';
 export class BookmarksComponent implements OnInit  {
   bookmarks: Bookmark[];
   selectedBookmark: Bookmark;
-  newBookmark: Bookmark;
+  titleVal = '';
 
   onSelect(bookmark: Bookmark): void {
     this.selectedBookmark = bookmark;
@@ -32,8 +32,12 @@ export class BookmarksComponent implements OnInit  {
       this.getBookmarks();
   }
 
+  onKey(value: string): void {
+    this.titleVal = value;
+  }
+
   onAdd(): void {
-    this.bookmarkService.addBookmark();
+    this.bookmarkService.addBookmark(this.titleVal);
   }
 
 }
