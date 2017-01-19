@@ -1,6 +1,6 @@
 import { Bookmark } from './bookmark';
 
-export const BOOKMARKS: Bookmark[] = [
+export let BOOKMARKS: Bookmark[] = [
   {
     name: 'Node.js Interview Questions and Answers (2017 Edition)',
     url: 'https://blog.risingstack.com/node-js-interview-questions-and-answers-2017/',
