@@ -28,7 +28,7 @@ export class QuestionDetailComponent implements OnInit{
     .subscribe(question => this.question = question);
   }
 
-  goBack(): void{
+  goBack(): void {
     this.location.back();
   }
 

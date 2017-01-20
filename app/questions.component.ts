@@ -65,4 +65,10 @@ export class QuestionsComponent implements OnInit  {
     })
   }
 
+  onDeleteQuestion(id: number): void {
+    this.questions = this.questions.filter((question) => {
+      return question.id !== id;
+    })
+  }
+
 }
