@@ -42,6 +42,10 @@ export class BookmarksComponent implements OnInit  {
   }
 
   onAdd(): void {
+    if (this.titleVal === '' || this.urlVal === '') {
+        alert('Please enter in values for both the title and URL.')
+        return null;
+    }
     this.bookmarks.push(
       {
         name: this.titleVal,
