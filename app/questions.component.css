@@ -8,6 +8,7 @@
 }
 
 .questions-container h2 {
+  font-size: 32px;
   margin: 40px auto;
 }
 
@@ -26,6 +27,7 @@
 }
 
 .questions-container h4 {
+  font-style: italic;
   margin-bottom: 50px;
 }
 

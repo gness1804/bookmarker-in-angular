@@ -8,6 +8,18 @@
   text-align: center;
 }
 
+.question-detail-component h2, h3, a {
+  margin: 40px auto;
+}
+
+.question-detail-component h2 {
+  font-size: 30px;
+}
+
+.question-detail-component h3 {
+  line-height: 25px;
+}
+
 .question-detail-component button {
   border-radius: 5px;
   display: block;
