@@ -21,8 +21,23 @@
   font-style: italic;
 }
 
+.questions-container h3 {
+  display: inline-block;
+}
+
 .questions-container h4 {
   margin-bottom: 50px;
+}
+
+.questions-container button {
+  background: none;
+  border: none;
+  color: #ee0000;
+  font-size: 1.3em;
+}
+
+.questions-container button:hover {
+  cursor: pointer;
 }
 
 .add-question-container {
