@@ -1,6 +1,8 @@
 <div *ngIf="question" class="question-detail-component">
   <h2>Q: {{question.body}}</h2>
   <h3>A: {{question.answer}}</h3>
-  <a href="{{question.sourceUrl}}" target="_blank">From: {{question.sourceName}}</a>
+  <div *ngIf="question.sourceName">
+    <a href="{{question.sourceUrl || null}}" target="_blank">From: {{question.sourceName}}</a>
+  </div>
   <button (click)="goBack()">Go Back</button>
 </div>
