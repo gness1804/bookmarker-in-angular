@@ -10,5 +10,10 @@ export let BOOKMARKS: Bookmark[] = [
     name: 'React Interview Questions',
     url: 'https://tylermcginnis.com/react-interview-questions/',
     id: 2,
+  },
+  {
+    name: 'Dom Events',
+    url: 'http://dom.events/',
+    id: 3,
   }
 ];
