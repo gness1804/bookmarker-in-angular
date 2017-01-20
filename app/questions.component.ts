@@ -56,6 +56,10 @@ export class QuestionsComponent implements OnInit  {
   }
 
   onAdd(): void {
+    if (this.bodyVal === '' || this.answerVal === '') {
+      alert('Please enter valid values for the Question and Answer.')
+      return null;
+    }
     this.questions.push({
       id: Date.now(),
       body: this.bodyVal,
