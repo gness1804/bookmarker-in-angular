@@ -15,5 +15,10 @@ export let BOOKMARKS: Bookmark[] = [
     name: 'Dom Events',
     url: 'http://dom.events/',
     id: 3,
+  },
+  {
+    name: 'The Node.js Way: Understanding Error-First Callbacks',
+    url: 'http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/',
+    id: 4,
   }
 ];
